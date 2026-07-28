@@ -1,0 +1,66 @@
+:root {
+  --sand: #f2c9a0;
+  --sand-soft: #fbf3e6;
+  --apricot: #f0a875;
+  --apricot-soft: #fceadb;
+  --coral: #e8836f;
+  --coral-soft: #fbe3df;
+  --seafoam: #3f8f83;
+  --seafoam-soft: #dcf3ee;
+  --ocean: #2f6690;
+  --ocean-soft: #dce9f5;
+  --lavender: #8f7bb0;
+  --lavender-soft: #ece5f4;
+
+  --ink: #22302b;
+  --ink-soft: #5a6a63;
+  --gold: #c9962f;
+  --cream: #fbf6ee;
+  --paper: #fffdf9;
+
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  overflow-x: hidden;
+}
