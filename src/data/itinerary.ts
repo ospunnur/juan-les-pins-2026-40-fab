@@ -4,6 +4,7 @@ export interface ItineraryEvent {
   time?: string
   title: string
   reserved?: boolean
+  reservedLabel?: string
   note?: string
 }
 
@@ -27,7 +28,7 @@ export const itinerary: ItineraryDay[] = [
     vibeDescription:
       'Fyrsti dagurinn - frá Keflavík og beint í frönsku sumarsólina. Innritun á hótelið, drykkur í sólsetrinu og fyrsti kvöldverðurinn.',
     events: [
-      { time: '06:20', title: 'Brottför frá Keflavík' },
+      { time: '05:30', title: 'Brottför frá Hafnarfirði' },
       { time: '08:20', title: 'Flug til Nice' },
       { time: '14:35', title: 'Lent í Nice' },
       { time: '15:20', title: 'Taxi á hótelið', reserved: true },
@@ -84,6 +85,7 @@ export const itinerary: ItineraryDay[] = [
         time: '10:00',
         title: 'Parfumerie Molinard - búum til eigið ilmvatn',
         reserved: true,
+        reservedLabel: 'Bókað fyrir Hildi, Guðrúnu Maríu og Unni',
         note: '60 Boulevard Victor Hugo, Grasse',
       },
       { time: '13:00', title: 'Hádegisverður í Grasse' },

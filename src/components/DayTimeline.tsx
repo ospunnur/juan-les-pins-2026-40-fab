@@ -26,7 +26,7 @@ export default function DayTimeline({ day }: { day: ItineraryDay }) {
                 <span className="day-timeline__title">{event.title}</span>
               </div>
               {event.note && <p className="day-timeline__note">{event.note}</p>}
-              {event.reserved && <ReservedBadge />}
+              {event.reserved && <ReservedBadge label={event.reservedLabel} />}
             </div>
           </li>
         ))}
