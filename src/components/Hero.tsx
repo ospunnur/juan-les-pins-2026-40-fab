@@ -15,8 +15,7 @@ export default function Hero() {
         <span className="hero__headline-line">Fab 40 🥂</span>
       </h1>
       <p className="hero__subtitle">
-        Fimm dagar, átta vinkonur, ein rúmlega fjörug rivíera. Sól, salt og systrafélag
-        í anda villtrar ró.
+        Fimm dagar, átta vinkonur og franska rivíeran eins og hún leggur sig.
       </p>
     </header>
   )

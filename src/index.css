@@ -1,22 +1,26 @@
 :root {
-  --sand: #f2c9a0;
-  --sand-soft: #fbf3e6;
-  --apricot: #f0a875;
-  --apricot-soft: #fceadb;
-  --coral: #e8836f;
-  --coral-soft: #fbe3df;
-  --seafoam: #3f8f83;
-  --seafoam-soft: #dcf3ee;
-  --ocean: #2f6690;
-  --ocean-soft: #dce9f5;
-  --lavender: #8f7bb0;
-  --lavender-soft: #ece5f4;
+  /* day themes - pastel, blue-leaning palette */
+  --sand: #f0e2c3;
+  --sand-soft: #f8f0de;
+  --apricot: #f6c7b3;
+  --apricot-soft: #fce8de;
+  --coral: #82b2c0;
+  --coral-soft: #dcece9;
+  --seafoam: #c3dedd;
+  --seafoam-soft: #e8f3f2;
+  --ocean: #3d6e88;
+  --ocean-soft: #dce9ee;
+  --lavender: #a9c2d6;
+  --lavender-soft: #e7eff4;
 
-  --ink: #22302b;
-  --ink-soft: #5a6a63;
+  /* secondary accents - used for eyebrows, bullets, badges */
+  --rose: #c97b63;
   --gold: #c9962f;
-  --cream: #fbf6ee;
-  --paper: #fffdf9;
+
+  --ink: #24323d;
+  --ink-soft: #5c6e78;
+  --cream: #f2eae0;
+  --paper: #fffdfb;
 
   --font-display: 'Fraunces', 'Georgia', serif;
   --font-body: 'Manrope', 'Helvetica Neue', Arial, sans-serif;

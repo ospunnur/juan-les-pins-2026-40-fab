@@ -14,9 +14,7 @@ export interface ItineraryDay {
   theme: DayTheme
   vibeTag: string
   vibeDescription: string
-  highlight?: boolean
   events: ItineraryEvent[]
-  tip?: { title: string; description: string }
 }
 
 export const itinerary: ItineraryDay[] = [
@@ -25,9 +23,9 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Miðvikudagur',
     date: '19. ágúst',
     theme: 'sand',
-    vibeTag: 'Lending á Rivíerunni',
+    vibeTag: 'Lendum á Rivíerunni',
     vibeDescription:
-      'Fyrsti dagurinn - úr Keflavík og beint í frönsku sumarsóluna. Innritun á hótelið, freyðivínsglas á sólsetrinu og fyrsti sameiginlegi kvöldverðurinn.',
+      'Fyrsti dagurinn - frá Keflavík og beint í frönsku sumarsólina. Innritun á hótelið, drykkur í sólsetrinu og fyrsti kvöldverðurinn.',
     events: [
       { time: '06:20', title: 'Brottför frá Keflavík' },
       { time: '08:20', title: 'Flug til Nice' },
@@ -37,25 +35,19 @@ export const itinerary: ItineraryDay[] = [
       { time: '18:00', title: 'Fordrykkur á rooftopinu' },
       { time: '20:00', title: 'Kvöldverður á La Mamma í Juan-les-Pins', reserved: true },
     ],
-    tip: {
-      title: 'Café Azul',
-      description: 'Drop-in staður fyrir kaffi og léttar veitingar - fínt að þekkja fyrir chill morgna.',
-    },
   },
   {
     id: 'day-2',
     weekday: 'Fimmtudagur',
     date: '20. ágúst',
     theme: 'apricot',
-    vibeTag: 'Fína kvöldið í Cannes',
+    vibeTag: 'Fína og fjöruga kvöldið í Cannes',
     vibeDescription:
-      'Peysan fína út úr töskunni. Kvöldið í Cannes er fyrir fínni útgáfuna af okkur öllum - dressað upp, borðað vel, hlegið í leynilegum speakeasy og kannski tekið lagið áður en yfir lýkur.',
-    highlight: true,
+      'Finnið sparigallann - glimmer og glans, því kvöldið í Cannes fab&fancy 40 - uppdressaðar, borðum frábæran mat í glamúr umhverfi, hlægjum og tökum kannski lagið!',
     events: [
       { title: 'Morgunmatur á hótelinu' },
       { title: 'Chill í Juan-les-Pins' },
-      { title: 'Léttur hádegisverður í JLP' },
-      { title: 'Drop-in einhvers staðar' },
+      { title: 'Léttur hádegisverður í JLP + drop-in einhversstaðar' },
       { time: '15:00', title: 'Taxi til Cannes' },
       { title: 'Kvöldverður í Cannes', reserved: true },
       { time: '20:30', title: 'Le Speakeasy' },
@@ -69,7 +61,6 @@ export const itinerary: ItineraryDay[] = [
     vibeTag: 'ChaCha-dagurinn',
     vibeDescription:
       'Einkabeach club-dagurinn okkar. Sól, salt, öldur, svöl stemning og ískaldir kokteilar - ekkert nema núið.',
-    highlight: true,
     events: [
       { title: 'Morgunmatur' },
       { title: 'Chill í JLP' },
@@ -87,8 +78,7 @@ export const itinerary: ItineraryDay[] = [
     theme: 'seafoam',
     vibeTag: 'Gömlu bæirnir - Grasse & Antibes',
     vibeDescription:
-      'Dagur fyrir litlu, gömlu, frönsku þorpin. Flæktar steinlagðar götur, ilmvatnssaga og fyrir sum okkar: að búa til okkar eigið ilmvatn.',
-    highlight: true,
+      'Dagur þar sem við gleymum okkur í litlum, gömlum frönskum þorpum. Þröngar steinlagðar götur, góður ilmur, krúttleg hús og góðar stundir.',
     events: [
       { title: 'Grasse old town' },
       {
@@ -99,8 +89,7 @@ export const itinerary: ItineraryDay[] = [
       },
       { time: '13:00', title: 'Hádegisverður í Grasse' },
       { title: 'Antibes old town' },
-      { title: 'Kvöldverður í Antibes', reserved: true },
-      { time: '19:30', title: 'Restó Nananere' },
+      { time: '19:30', title: 'Kvöldverður í Antibes : Restó Nananere', reserved: true },
     ],
   },
   {
@@ -108,17 +97,16 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Sunnudagur',
     date: '23. ágúst',
     theme: 'ocean',
-    vibeTag: 'Báturinn & eyjan',
+    vibeTag: 'Bátsferð, sjór og eyjur',
     vibeDescription:
-      'Heill dagur á sjó og við eyjuna - þetta verður einn af þeim dögum sem við tölum um árum saman.',
-    highlight: true,
+      'Heill dagur á sjó, franska rivíeran eins og hún leggur sig - þetta verður einn af þeim dögum sem við tölum um árum saman.',
     events: [
       { time: '09:00', title: 'Bátsferð leggur af stað', reserved: true },
-      { title: 'Sigling og eyjan allan daginn', reserved: true },
-      { title: 'Hádegisverður um borð', reserved: true },
+      { title: 'Sigling og eyjahopp allan daginn', reserved: true },
       {
         time: '14:00',
-        title: 'La Tonnelle',
+        title: 'Hádegisverður : La Tonnelle',
+        reserved: true,
         note: 'Dresscode: bannað að vera í sundfatnaði · missum borðið ef mætum seint',
       },
       { time: '18:00', title: 'Komin úr bátsferð' },
@@ -142,5 +130,17 @@ export const itinerary: ItineraryDay[] = [
       { time: '15:35', title: 'Flug heim' },
       { time: '18:00', title: 'Lent á Íslandi' },
     ],
+  },
+]
+
+export interface Tip {
+  title: string
+  description: string
+}
+
+export const tips: Tip[] = [
+  {
+    title: 'Café Azul',
+    description: 'Drop-in staður fyrir kaffi og léttar veitingar - fínt að þekkja fyrir chill morgna.',
   },
 ]
