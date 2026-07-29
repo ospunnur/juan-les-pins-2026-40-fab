@@ -419,7 +419,7 @@ main {
   border-radius: 1.1rem;
   padding: 1.5rem;
   box-shadow: 0 6px 20px rgba(36, 50, 61, 0.06);
-  border-left: 4px solid var(--rose);
+  border: 1px solid var(--rose);
 }
 
 .tips__card h3 {
