@@ -214,8 +214,9 @@ main {
 /* ---------- Day timeline ---------- */
 
 .day-timeline {
-  --theme-soft: var(--ocean-soft);
-  --theme-booked: #b8d2dd;
+  --theme-soft: #edf4f6;
+  --theme-booked: #d4e4ea;
+  --theme-border: #95bdcd;
   --theme-accent: var(--ocean);
   border-radius: 1.6rem;
   padding: 2rem clamp(1.25rem, 4vw, 2.75rem);
@@ -225,38 +226,44 @@ main {
 }
 
 .day-timeline--sand {
-  --theme-soft: var(--sand-soft);
-  --theme-booked: #ead4a5;
+  --theme-soft: #fcf8ef;
+  --theme-booked: #f5ead1;
+  --theme-border: #dfc58e;
   --theme-accent: #b88b3e;
 }
 
 .day-timeline--apricot {
-  --theme-soft: var(--apricot-soft);
-  --theme-booked: #f3b69e;
+  --theme-soft: #fdf4ef;
+  --theme-booked: #f8d9cc;
+  --theme-border: #e9aa91;
   --theme-accent: #c9785c;
 }
 
 .day-timeline--coral {
-  --theme-soft: var(--coral-soft);
-  --theme-booked: #b5d8d2;
+  --theme-soft: #edf6f4;
+  --theme-booked: #d7e9e6;
+  --theme-border: #9bcac2;
   --theme-accent: #3f887e;
 }
 
 .day-timeline--seafoam {
-  --theme-soft: var(--seafoam-soft);
-  --theme-booked: #c2dddd;
+  --theme-soft: #f2f8f7;
+  --theme-booked: #dcebea;
+  --theme-border: #afd1d0;
   --theme-accent: #5a9293;
 }
 
 .day-timeline--ocean {
-  --theme-soft: var(--ocean-soft);
-  --theme-booked: #b8d2dd;
+  --theme-soft: #edf4f6;
+  --theme-booked: #d4e4ea;
+  --theme-border: #95bdcd;
   --theme-accent: var(--ocean);
 }
 
 .day-timeline--lavender {
-  --theme-soft: var(--lavender-soft);
-  --theme-booked: #c7dbe9;
+  --theme-soft: #f1f6f9;
+  --theme-booked: #dce9f2;
+  --theme-border: #aac8dc;
   --theme-accent: #648eae;
 }
 
@@ -321,16 +328,17 @@ main {
 }
 
 .day-timeline__dot {
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--theme-accent);
   border-radius: 50%;
-  background: var(--theme-accent);
-  box-shadow: 0 0 0 4px var(--paper);
+  background: var(--paper);
+  box-shadow: 0 0 0 3px var(--paper);
   justify-self: center;
 }
 
 .day-timeline__item--reserved .day-timeline__dot {
-  background: var(--theme-accent);
+  background: var(--paper);
 }
 
 .day-timeline__content {
@@ -341,7 +349,7 @@ main {
 
 .day-timeline__item--reserved .day-timeline__content {
   background: var(--theme-booked);
-  border: 1px solid var(--theme-accent);
+  border: 1px solid var(--theme-border);
 }
 
 .day-timeline__row {
