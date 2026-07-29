@@ -222,7 +222,7 @@ main {
   padding: 2rem clamp(1.25rem, 4vw, 2.75rem);
   background: var(--paper);
   box-shadow: 0 14px 34px rgba(36, 50, 61, 0.08);
-  border-top: 6px solid var(--theme-accent);
+  border: 1px solid var(--theme-border);
 }
 
 .day-timeline--sand {
