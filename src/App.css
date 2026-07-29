@@ -214,21 +214,51 @@ main {
 /* ---------- Day timeline ---------- */
 
 .day-timeline {
-  --theme-color: var(--ocean);
   --theme-soft: var(--ocean-soft);
+  --theme-booked: #b8d2dd;
+  --theme-accent: var(--ocean);
   border-radius: 1.6rem;
   padding: 2rem clamp(1.25rem, 4vw, 2.75rem);
   background: var(--paper);
   box-shadow: 0 14px 34px rgba(36, 50, 61, 0.08);
-  border-top: 6px solid var(--theme-color);
+  border-top: 6px solid var(--theme-accent);
 }
 
-.day-timeline--sand { --theme-color: var(--sand); --theme-soft: var(--sand-soft); }
-.day-timeline--apricot { --theme-color: var(--apricot); --theme-soft: var(--apricot-soft); }
-.day-timeline--coral { --theme-color: var(--coral); --theme-soft: var(--coral-soft); }
-.day-timeline--seafoam { --theme-color: var(--seafoam); --theme-soft: var(--seafoam-soft); }
-.day-timeline--ocean { --theme-color: var(--ocean); --theme-soft: var(--ocean-soft); }
-.day-timeline--lavender { --theme-color: var(--lavender); --theme-soft: var(--lavender-soft); }
+.day-timeline--sand {
+  --theme-soft: var(--sand-soft);
+  --theme-booked: #ead4a5;
+  --theme-accent: #b88b3e;
+}
+
+.day-timeline--apricot {
+  --theme-soft: var(--apricot-soft);
+  --theme-booked: #f3b69e;
+  --theme-accent: #c9785c;
+}
+
+.day-timeline--coral {
+  --theme-soft: var(--coral-soft);
+  --theme-booked: #b5d8d2;
+  --theme-accent: #3f887e;
+}
+
+.day-timeline--seafoam {
+  --theme-soft: var(--seafoam-soft);
+  --theme-booked: #c2dddd;
+  --theme-accent: #5a9293;
+}
+
+.day-timeline--ocean {
+  --theme-soft: var(--ocean-soft);
+  --theme-booked: #b8d2dd;
+  --theme-accent: var(--ocean);
+}
+
+.day-timeline--lavender {
+  --theme-soft: var(--lavender-soft);
+  --theme-booked: #c7dbe9;
+  --theme-accent: #648eae;
+}
 
 .day-timeline__header {
   text-align: center;
@@ -294,13 +324,13 @@ main {
   width: 1.05rem;
   height: 1.05rem;
   border-radius: 50%;
-  background: var(--theme-color);
+  background: var(--theme-accent);
   box-shadow: 0 0 0 4px var(--paper);
   justify-self: center;
 }
 
 .day-timeline__item--reserved .day-timeline__dot {
-  background: var(--reserved);
+  background: var(--theme-accent);
 }
 
 .day-timeline__content {
@@ -310,8 +340,8 @@ main {
 }
 
 .day-timeline__item--reserved .day-timeline__content {
-  background: var(--reserved-soft);
-  border: 1px solid rgba(224, 120, 95, 0.35);
+  background: var(--theme-booked);
+  border: 1px solid var(--theme-accent);
 }
 
 .day-timeline__row {
@@ -324,7 +354,7 @@ main {
 .day-timeline__time {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--ocean);
+  color: var(--theme-accent);
   font-size: 0.85rem;
   flex-shrink: 0;
 }
@@ -348,13 +378,13 @@ main {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--reserved);
+  color: var(--theme-accent);
 }
 
 .reserved-badge svg {
   width: 0.85rem;
   height: 0.85rem;
-  fill: var(--reserved);
+  fill: var(--theme-accent);
 }
 
 /* ---------- Tips ---------- */
