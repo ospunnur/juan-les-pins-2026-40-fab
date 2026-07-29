@@ -215,6 +215,7 @@ main {
 
 .day-timeline {
   --theme-color: var(--ocean);
+  --theme-soft: var(--ocean-soft);
   border-radius: 1.6rem;
   padding: 2rem clamp(1.25rem, 4vw, 2.75rem);
   background: var(--paper);
@@ -222,12 +223,12 @@ main {
   border-top: 6px solid var(--theme-color);
 }
 
-.day-timeline--sand { --theme-color: var(--sand); }
-.day-timeline--apricot { --theme-color: var(--apricot); }
-.day-timeline--coral { --theme-color: var(--coral); }
-.day-timeline--seafoam { --theme-color: var(--seafoam); }
-.day-timeline--ocean { --theme-color: var(--ocean); }
-.day-timeline--lavender { --theme-color: var(--lavender); }
+.day-timeline--sand { --theme-color: var(--sand); --theme-soft: var(--sand-soft); }
+.day-timeline--apricot { --theme-color: var(--apricot); --theme-soft: var(--apricot-soft); }
+.day-timeline--coral { --theme-color: var(--coral); --theme-soft: var(--coral-soft); }
+.day-timeline--seafoam { --theme-color: var(--seafoam); --theme-soft: var(--seafoam-soft); }
+.day-timeline--ocean { --theme-color: var(--ocean); --theme-soft: var(--ocean-soft); }
+.day-timeline--lavender { --theme-color: var(--lavender); --theme-soft: var(--lavender-soft); }
 
 .day-timeline__header {
   text-align: center;
@@ -303,7 +304,7 @@ main {
 }
 
 .day-timeline__content {
-  background: rgba(36, 50, 61, 0.03);
+  background: var(--theme-soft);
   border-radius: 0.9rem;
   padding: 0.7rem 0.9rem;
 }
