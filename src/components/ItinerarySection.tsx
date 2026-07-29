@@ -13,7 +13,6 @@ export default function ItinerarySection() {
         <p className="section-eyebrow">Dagskráin</p>
         <h2>Day by Day</h2>
         <div className="itinerary__legend">
-          <span className="itinerary__legend-swatch itinerary__legend-swatch--reserved" />
           Það sem er í lituðum kassa merkir að borð, bátur eða annað er búið að bóka fyrir
           allan hópinn - verum stundvís!
         </div>

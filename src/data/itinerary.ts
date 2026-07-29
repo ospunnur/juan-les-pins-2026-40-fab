@@ -23,7 +23,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Miðvikudagur',
     date: '19. ágúst',
     theme: 'sand',
-    vibeTag: 'Lendum á Rivíerunni',
+    vibeTag: 'Lendum á Rivíerunni 🛬',
     vibeDescription:
       'Fyrsti dagurinn - frá Keflavík og beint í frönsku sumarsólina. Innritun á hótelið, drykkur í sólsetrinu og fyrsti kvöldverðurinn.',
     events: [
@@ -41,7 +41,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Fimmtudagur',
     date: '20. ágúst',
     theme: 'apricot',
-    vibeTag: 'Fína og fjöruga kvöldið í Cannes',
+    vibeTag: 'Fína og fjöruga kvöldið í Cannes ✨',
     vibeDescription:
       'Finnið sparigallann - glimmer og glans, því kvöldið í Cannes fab&fancy 40 - uppdressaðar, borðum frábæran mat í glamúr umhverfi, hlægjum og tökum kannski lagið!',
     events: [
@@ -58,7 +58,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Föstudagur',
     date: '21. ágúst',
     theme: 'coral',
-    vibeTag: 'ChaCha-dagurinn',
+    vibeTag: 'ChaCha-dagurinn 🍹',
     vibeDescription:
       'Einkabeach club-dagurinn okkar. Sól, salt, öldur, svöl stemning og ískaldir kokteilar - ekkert nema núið.',
     events: [
@@ -76,7 +76,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Laugardagur',
     date: '22. ágúst',
     theme: 'seafoam',
-    vibeTag: 'Gömlu bæirnir - Grasse & Antibes',
+    vibeTag: 'Gömlu bæirnir - Grasse & Antibes 🌸',
     vibeDescription:
       'Dagur þar sem við gleymum okkur í litlum, gömlum frönskum þorpum. Þröngar steinlagðar götur, góður ilmur, krúttleg hús og góðar stundir.',
     events: [
@@ -97,7 +97,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Sunnudagur',
     date: '23. ágúst',
     theme: 'ocean',
-    vibeTag: 'Bátsferð, sjór og eyjur',
+    vibeTag: 'Bátsferð, sjór og eyjur ⛵',
     vibeDescription:
       'Heill dagur á sjó, franska rivíeran eins og hún leggur sig - þetta verður einn af þeim dögum sem við tölum um árum saman.',
     events: [
@@ -119,7 +119,7 @@ export const itinerary: ItineraryDay[] = [
     weekday: 'Mánudagur',
     date: '24. ágúst',
     theme: 'lavender',
-    vibeTag: 'Heim á leið',
+    vibeTag: 'Heimför 🛫',
     vibeDescription:
       'Síðasti morgunninn í sólinni áður en förinni er heitið heim - róleg kveðjustund við Miðjarðarhafið.',
     events: [
