@@ -49,8 +49,7 @@ export const itinerary: ItineraryDay[] = [
       { title: 'Chill í Juan-les-Pins' },
       { title: 'Léttur hádegisverður í JLP + drop-in einhversstaðar' },
       { time: '15:00', title: 'Taxi til Cannes' },
-      { title: 'Kvöldverður í Cannes', reserved: true },
-      { time: '20:30', title: 'Le Speakeasy' },
+      { time: '20:30', title: 'Kvöldverður í Cannes : Le Speakeasy', reserved: true },
     ],
   },
   {
