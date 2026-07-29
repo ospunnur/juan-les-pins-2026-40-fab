@@ -139,7 +139,7 @@ export interface Tip {
 
 export const tips: Tip[] = [
   {
-    title: 'Café Azul',
-    description: 'Drop-in staður fyrir kaffi og léttar veitingar - fínt að þekkja fyrir chill morgna.',
+    title: 'Café Azul ☕',
+    description: 'Drop-in staður fyrir kaffi og léttar veitingar.',
   },
 ]
